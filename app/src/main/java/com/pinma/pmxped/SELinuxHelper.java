@@ -1,11 +1,11 @@
-package de.robv.android.xposed;
+package com.pinma.pmxped;
 
 import android.os.SELinux;
 
-import de.robv.android.xposed.services.BaseService;
-import de.robv.android.xposed.services.BinderService;
-import de.robv.android.xposed.services.DirectAccessService;
-import de.robv.android.xposed.services.ZygoteService;
+import com.pinma.pmxped.services.BaseService;
+import com.pinma.pmxped.services.BinderService;
+import com.pinma.pmxped.services.DirectAccessService;
+import com.pinma.pmxped.services.ZygoteService;
 
 /**
  * A helper to work with (or without) SELinux, abstracting much of its big complexity.

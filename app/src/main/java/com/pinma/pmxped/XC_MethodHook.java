@@ -1,9 +1,9 @@
-package de.robv.android.xposed;
+package com.pinma.pmxped;
 
 import java.lang.reflect.Member;
 
-import de.robv.android.xposed.callbacks.IXUnhook;
-import de.robv.android.xposed.callbacks.XCallback;
+import com.pinma.pmxped.callbacks.IXUnhook;
+import com.pinma.pmxped.callbacks.XCallback;
 
 /**
  * Callback class for method hooks.

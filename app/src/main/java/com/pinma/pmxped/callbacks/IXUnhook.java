@@ -1,6 +1,6 @@
-package de.robv.android.xposed.callbacks;
+package com.pinma.pmxped.callbacks;
 
-import de.robv.android.xposed.IXposedHookZygoteInit;
+import com.pinma.pmxped.IXposedHookZygoteInit;
 
 /**
  * Interface for objects that can be used to remove callbacks.

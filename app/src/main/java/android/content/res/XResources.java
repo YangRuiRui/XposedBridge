@@ -26,23 +26,23 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.WeakHashMap;
 
-import de.robv.android.xposed.IXposedHookZygoteInit;
-import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XC_MethodHook.MethodHookParam;
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
-import de.robv.android.xposed.callbacks.XC_LayoutInflated;
-import de.robv.android.xposed.callbacks.XC_LayoutInflated.LayoutInflatedParam;
-import de.robv.android.xposed.callbacks.XCallback;
+import com.pinma.pmxped.IXposedHookZygoteInit;
+import com.pinma.pmxped.XC_MethodHook;
+import com.pinma.pmxped.XC_MethodHook.MethodHookParam;
+import com.pinma.pmxped.XposedBridge;
+import com.pinma.pmxped.XposedBridge.CopyOnWriteSortedSet;
+import com.pinma.pmxped.callbacks.XC_LayoutInflated;
+import com.pinma.pmxped.callbacks.XC_LayoutInflated.LayoutInflatedParam;
+import com.pinma.pmxped.callbacks.XCallback;
 import xposed.dummy.XResourcesSuperClass;
 import xposed.dummy.XTypedArraySuperClass;
 
-import static de.robv.android.xposed.XposedHelpers.decrementMethodDepth;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
-import static de.robv.android.xposed.XposedHelpers.getIntField;
-import static de.robv.android.xposed.XposedHelpers.getLongField;
-import static de.robv.android.xposed.XposedHelpers.getObjectField;
-import static de.robv.android.xposed.XposedHelpers.incrementMethodDepth;
+import static com.pinma.pmxped.XposedHelpers.decrementMethodDepth;
+import static com.pinma.pmxped.XposedHelpers.findAndHookMethod;
+import static com.pinma.pmxped.XposedHelpers.getIntField;
+import static com.pinma.pmxped.XposedHelpers.getLongField;
+import static com.pinma.pmxped.XposedHelpers.getObjectField;
+import static com.pinma.pmxped.XposedHelpers.incrementMethodDepth;
 
 /**
  * {@link android.content.res.Resources} subclass that allows replacing individual resources.
